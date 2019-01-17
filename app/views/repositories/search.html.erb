@@ -7,8 +7,8 @@
 
 <% if @results %>
 <ul>
-  <% @results.each do |result| %>
-    <li><%= result["name"] %><br>
+  <% @results.each do |repos| %>
+    <li><%= repos["name"] %><br>
         <%= link_to result["html_url"], result["html_url"] %><br>
         <%= result["description"] %>
     </li>
