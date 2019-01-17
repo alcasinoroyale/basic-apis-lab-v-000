@@ -9,8 +9,8 @@
 <ul>
   <% @results.each do |repos| %>
     <li><%= repos["name"] %><br>
-        <%= link_to result["html_url"], result["html_url"] %><br>
-        <%= result["description"] %>
+        <%= link_to reps["html_url"], repos["html_url"] %><br>
+        <%= repos["description"] %>
     </li>
   <% end %>
 </ul>
